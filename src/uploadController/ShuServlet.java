@@ -77,7 +77,7 @@ public class ShuServlet extends HttpServlet {
 	}
 
 	private boolean fileNameCheck(String fileName){
-		String regex = "^\\S+\\.txt$";		//正規表現の利用
+		String regex = "^\\S+\\.jpg$";		//正規表現の利用
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(fileName);
 		return matcher.matches();
